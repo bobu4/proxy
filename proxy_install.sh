@@ -52,8 +52,7 @@ Port 8888
 # Timeout: The maximum number of seconds of inactivity a connection is
 # allowed to have before it is closed by tinyproxy.
 #
-Timeout 600
-
+Timeout 300
 #
 # ErrorFile: Defines the HTML file to send when a given HTTP error
 # occurs.  You will probably need to customize the location to your
@@ -204,7 +203,7 @@ MaxClients 100
 # MaxSpareServers then the extras will be killed off.
 #
 MinSpareServers 5
-MaxSpareServers 20
+MaxSpareServers 200
 
 #
 # StartServers: The number of servers to start initially.
@@ -315,8 +314,8 @@ DisableViaHeader Yes
 #
 # The following two ports are used by SSL.
 #
-ConnectPort 443
-ConnectPort 563
+#ConnectPort 443
+#ConnectPort 563
 
 #
 # Configure one or more ReversePath directives to enable reverse proxy
