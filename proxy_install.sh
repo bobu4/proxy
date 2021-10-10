@@ -1,8 +1,8 @@
 #!/bin/bash
 sudo apt-get update
 apt-get install tinyproxy -y
-read -p 'Username: ' login
-read -sp 'Password: ' passwd
+read -p '\nUsername: ' login
+read -sp '\nPassword: ' passwd
 sudo tee <<EOF >/dev/null /etc/tinyproxy/tinyproxy.conf
 ##
 ## tinyproxy.conf -- tinyproxy daemon configuration file
