@@ -129,7 +129,7 @@ LogLevel Info
 # can be used for signalling purposes.
 # If not specified, no pidfile will be written.
 #
-PidFile "/run/tinyproxy/tinyproxy.pid"
+PidFile "/var/run/tinyproxy/tinyproxy.pid"
 
 #
 # XTinyproxy: Tell Tinyproxy to include the X-Tinyproxy header, which
@@ -192,7 +192,7 @@ PidFile "/run/tinyproxy/tinyproxy.pid"
 # be created. In other words, only MaxClients number of clients can be
 # connected at the same time.
 #
-MaxClients 100
+MaxClients 30
 
 #
 # MinSpareServers/MaxSpareServers: These settings set the upper and
@@ -203,7 +203,7 @@ MaxClients 100
 # MaxSpareServers then the extras will be killed off.
 #
 MinSpareServers 5
-MaxSpareServers 200
+MaxSpareServers 40
 
 #
 # StartServers: The number of servers to start initially.
